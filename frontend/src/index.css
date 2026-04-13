@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Roboto", sans-serif;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0; transform: scale(0.98); }
+}
+
+.animate-fadeOut {
+  animation: fadeOut 0.4s ease-out forwards;
+}
+
+.my-slider .rc-slider-rail {
+  background-color: #e5e7eb;
+  height: 6px;
+}
+
+.my-slider .rc-slider-track {
+  background-color: #fb923c;
+  height: 6px;
+}
+
+.my-slider .rc-slider-handle {
+  width: 18px;
+  height: 18px;
+  background-color: #fb923c;
+  border: none;
+  margin-top: -6px;
+}
